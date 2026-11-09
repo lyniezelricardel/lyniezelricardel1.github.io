@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@600;700&display=swap');
+/* Fonts are loaded in index.html with preconnect for faster rendering. */
 
 :root {
   --navy: #082a72;
@@ -448,4 +448,54 @@ button, input, textarea { font: inherit; }
   .about-layout, .contact-wrap { width:90%; }
   .workspace-card { height:330px; }
   .info-line { grid-template-columns:24px 80px 1fr; font-size:11px; }
+}
+
+/* WORK FILTER BUTTONS */
+.filter-pill {
+  cursor: pointer;
+  transition: .2s ease;
+}
+.filter-pill:hover {
+  border-color: #3978e8;
+  color: #3978e8;
+}
+.filter-pill.active:hover {
+  color: #fff;
+}
+
+/* FOCUS VISIBILITY */
+.nav-links a:focus-visible,
+.dropdown-btn:focus-visible,
+.dropdown-menu a:focus-visible,
+.header-socials a:focus-visible,
+.social-row a:focus-visible,
+.btn:focus-visible,
+.filter-pill:focus-visible,
+.send-btn:focus-visible,
+.form-group input:focus-visible,
+.form-group textarea:focus-visible {
+  outline: 2px solid #3978e8;
+  outline-offset: 2px;
+}
+
+/* NOT FOUND */
+.not-found {
+  position: relative;
+  z-index: 2;
+  padding: 0 0 90px;
+  text-align: center;
+}
+.not-found p {
+  color: #40516d;
+  font-size: 14.5px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
 }

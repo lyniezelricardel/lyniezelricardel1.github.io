@@ -1,0 +1,23 @@
+{
+  "name": "lyniezel-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/postbuild.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.3.6"
+  }
+}
